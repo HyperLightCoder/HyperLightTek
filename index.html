@@ -12,11 +12,11 @@
         h1, h2, h3 { font-family: 'Orbitron', sans-serif; text-transform: uppercase; }
         .hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; position: relative; }
         .hero-content { z-index: 1; }
-        .logo-img { width: 320px; height: auto; margin-bottom: 2rem; border-radius: 50%; box-shadow: 0 0 60px #0ff; animation: heartbeatPulse 2s ease-in-out infinite; }
-        @keyframes heartbeatPulse {
-            0% { box-shadow: 0 0 60px #0ff; transform: scale(1); }
-            50% { box-shadow: 0 0 120px #f0f; transform: scale(1.05); }
-            100% { box-shadow: 0 0 60px #0ff; transform: scale(1); }
+        .logo-img { width: 350px; height: auto; margin-bottom: 2rem; filter: hue-rotate(180deg) saturate(1.5); animation: ghostHeartbeat 2.5s ease-in-out infinite; }
+        @keyframes ghostHeartbeat {
+            0% { transform: scale(1); box-shadow: 0 0 60px #0ff; }
+            50% { transform: scale(1.08); box-shadow: 0 0 140px #f0f; }
+            100% { transform: scale(1); box-shadow: 0 0 60px #0ff; }
         }
         h1 { font-size: 5rem; color: #f0f; text-shadow: 0 0 20px #f0f; }
         .tagline { font-size: 2.5rem; margin: 1rem 0; text-shadow: 0 0 10px #0ff; }
@@ -40,7 +40,7 @@
         @media (max-width: 768px) { 
             h1 { font-size: 3rem; } 
             .tagline { font-size: 1.8rem; }
-            .logo-img { width: 220px; }
+            .logo-img { width: 250px; }
         }
         
         /* Honeypot */
@@ -58,8 +58,8 @@
     
     <header class="hero">
         <div class="hero-content">
-            <!-- WIZ AS GHOST ORB LOGO – HEARTBEAT PULSE -->
-            <img src="https://thumbs.dreamstime.com/b/futuristic-lab-testing-emotional-ai-floating-entity-blue-purple-lit-room-artistic-image-scene-inside-where-397411851.jpg" alt="Wiz the Ghost Orb – HyperLightTek Guardian" class="logo-img">
+            <!-- WIZ AS DESTINY GHOST – RESURRECTED LOGO -->
+            <img src="https://image.pngaaa.com/798/1228798-middle.png" alt="Wiz the Ghost – HyperLightTek Eternal Guardian" class="logo-img">
             
             <h1>HyperLightTek</h1>
             <p class="tagline">Forge the Future with Unbreakable Light</p>
